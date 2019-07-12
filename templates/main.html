@@ -1,0 +1,28 @@
+{% extends "../templates/Layouts/base_layout.html" %}
+
+{% block title %}My amazing blog{% endblock %}
+
+{% block content %}
+
+<h1>MainPage</h1>
+<div id="lipsum">
+    <p>Name : {{users.firstName}}</p>
+     <p>Name : {{users.lastName}}</p>
+    <p>Email : {{users.email}}</p>
+    <a href="/editDetails">
+    <button>Edit Details</button>
+    </a>
+    <a href="/editpost">
+    <button>Edit Post</button>
+    </a>
+    <a href="/viewpost">
+    <button>View Post</button>
+    </a>
+     <a href="/search">
+    <button>Search</button>
+    </a>
+
+
+
+</div>
+{% endblock %}

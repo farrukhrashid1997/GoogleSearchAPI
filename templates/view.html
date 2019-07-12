@@ -1,0 +1,22 @@
+{% extends "../templates/Layouts/base_layout.html" %}
+
+{% block title %}My amazing blog{% endblock %}
+
+{% block content %}
+
+
+<div style="padding:1%">
+{% for post in posts %}
+<div style="border-bottom:2px solid black">
+hello
+	<h4>{{post.subject}}</h4>
+	<i> {{post.date}} </i>
+	<div >
+		<p>
+			{{post.post}}
+		</p>
+	</div>
+</div>
+{% endfor %}
+</div>
+{% endblock %}

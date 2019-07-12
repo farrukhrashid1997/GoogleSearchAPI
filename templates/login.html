@@ -1,0 +1,17 @@
+{% extends "../templates/Layouts/base_layout.html" %}
+
+{% block title %}My amazing blog{% endblock %}
+
+{% block content %}
+
+<div class="login-page">
+    <div class="form">
+      <form class="login-form" method="POST">
+        <input type="text" name="email" placeholder="username"/>
+        <input type="password" name="password" placeholder="password"/>
+        <input type="submit">login</input>
+        <p class="message">Not registered? <a href="/signup">Create an account</a></p>
+      </form>
+    </div>
+  </div>
+  {% endblock %}

@@ -1,0 +1,20 @@
+{% extends "../templates/Layouts/base_layout.html" %}
+
+{% block title %}My amazing blog{% endblock %}
+
+{% block content %}
+
+<h1>MainPage</h1>
+
+<div>
+    <form method="post">
+        <div class="top-row">
+          <div class="field-wrap">
+            <input type="text" name="subject" placeholder="subject"/>
+            <input type="text" name="post" />
+          </div>
+        </div>
+        <button type="submit" class="button button-block"/>Post</button>
+        </form>
+</div>
+{% endblock %}

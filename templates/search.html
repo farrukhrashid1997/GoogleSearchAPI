@@ -1,0 +1,35 @@
+{% extends "../templates/Layouts/base_layout.html" %}
+
+{% block title %}My amazing blog{% endblock %}
+
+{% block content %}
+
+
+<form action="/search" method="post">
+
+        <input type="text" value="" name="query"/>
+        <button type="submit" class="button button-block"/>Search</button>
+    </form>
+<div>
+	<div >
+		<p>
+	<!--{% for scored_document in results %}
+
+      {% for f in scored_document.fields%}
+      {% endfor %}
+    {% endfor %}-->
+    {% for key, value in results.items %}
+       {% for key, value in value.items %}
+            {{value}}
+    {% endfor %}
+    <br>
+    {% endfor %}
+</ul>
+		</p>
+	</div>
+</div>
+
+
+
+
+{% endblock %}
